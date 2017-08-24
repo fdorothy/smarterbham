@@ -73,7 +73,7 @@ void readNoise()
 
 void readLight()
 {
-  light = analogRead(LIGHTPIN);
+  light = analogRead(LIGHTPIN) * 5.0 / 1024;
 }
 
 void readParticle()
